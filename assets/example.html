@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Visualización JSON en Cuadros</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    margin: 0; padding: 2rem;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+  }
+  .card {
+    background: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 280px;
+    transition: box-shadow 0.3s ease;
+  }
+  .card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  .card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #0077cc;
+  }
+  .card p {
+    margin: 0.3rem 0;
+    line-height: 1.3;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+<script>
+  // JSON de ejemplo
+  const data = [
+    { id: 1, nombre: "Juan Pérez", email: "juan@example.com", rol: "Administrador" },
+    { id: 2, nombre: "Ana Gómez", email: "ana@example.com", rol: "Editor" },
+    { id: 3, nombre: "Luis Martínez", email: "luis@example.com", rol: "Visor" }
+  ];
+
+  // Función para crear los cuadros y mostrarlos
+  function mostrarDatos(jsonData) {
+    jsonData.forEach(item => {
+      // Crear el contenedor card
+      const card = document.createElement('div');
+      card.className = 'card';
+
+      // Crear contenido con la info
+      const title = document.createElement('h2');
+      title.textContent = item.nombre;
+
+      const email = document.createElement('p');
+      email.textContent = `Email: ${item.email}`;
+
+      const rol = document.createElement('p');
+      rol.textContent = `Rol: ${item.rol}`;
+
+      const btnSwitch = document.createElement('div');
+      // Agregar al card
+      card.appendChild(title);
+      card.appendChild(email);
+      card.appendChild(rol);
+
+      // Añadir card al body o contenedor principal
+      document.body.appendChild(card);
+    });
+  }
+
+  mostrarDatos(data);
+</script>
+</body>
+</html>
+

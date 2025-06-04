@@ -1,0 +1,74 @@
+[
+        { 
+            "id": 1,
+            "name" : "DevLens",
+            "desc": "Quickly inspect page layouts and visualize element boundaries.",
+            "Remove": false
+        },
+        {   
+            "id": 2,
+            "name" : "StyleSpy",
+            "desc": "Instantly analyze and copy CSS from any webpage element.",
+            "Remove": false
+        },
+        {
+            "id": 3,
+            "name" : "SpeedBoost",
+            "desc": "Optimizes browser resource usage to accelerate page loading.",
+            "Remove": false
+        },
+        {   
+            "id": 4,
+            "name" : "JSONWizard",
+            "desc": "Formats, validates, and prettifies JSON responses in-browser.",
+            "Remove": false
+        },
+        {
+            "id": 5,
+            "name" : "TabMaster Pro",
+            "desc": "Organizes browser tabs into groups and sessions.",
+            "Remove": false
+        },
+        {   
+            "id": 6,
+            "name" : "ViewportBuddy",
+            "desc": "Simulates various screen resolutions directly within the browser.",
+            "Remove": false
+        },
+        {
+            "id": 7,
+            "name" : "Markup Notes",
+            "desc": "Enables annotation and notes directly onto webpages for collaborative debugging.",
+            "Remove": false
+        },
+        {
+            "id": 8,
+            "name" : "GridGuides",
+            "desc": "Overlay customizable grids and alignment guides on any webpage.",
+            "Remove": false
+        },
+        {
+            "id": 9,
+            "name" : "Palette Picker",
+            "desc": "Instantly extracts color palettes from any webpage.",
+            "Remove": false
+        },
+        {   
+            "id": 10,
+            "name" : "LinkChecker",
+            "desc": "Scans and highlights broken links on any page.",
+            "Remove": false
+        },
+        {
+            "id": 11,
+            "name" : "DOM Snapshot",
+            "desc": "Capture and export DOM structures quickly.",
+            "Remove": false
+        },
+        {
+            "id": 12,
+            "name" : "ConsolePlus",
+            "desc": "Enhanced developer console with advanced filtering and logging.",
+            "Remove": false
+        }
+]
