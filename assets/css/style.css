@@ -11,6 +11,43 @@ body{
    justify-content: center;
    align-items: center;
 }
+.dark-mode{
+    background: linear-gradient(180deg, #040918 0%, #091540 100%) !important;
+    color: hsl(200, 60%, 99%) !important;
+    transition: all 0.3s ease-in-out;
+}
+.card-dark-mode{
+    background-color: hsl(226, 25%, 17%) !important;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.3s ease-in-out;
+    color: hsl(200, 60%, 99%);
+}
+.btn-dark-mode{
+    background-color: hsla(226, 11%, 37%, 0.452) !important;
+    transition: all 0.3s ease-in-out;
+}
+.btn-remove-dark-mode{
+    background-color: hsl(226, 25%, 17%) !important;
+    color: hsl(200, 60%, 99%) !important;
+    border: 1px solid hsl(226, 11%, 37%) !important;
+    transition: all 0.3s ease-in-out;
+}
+.btn-remove-dark-mode:hover{
+    background-color: hsl(3, 86%, 64%) !important;
+    color: hsl(226, 25%, 17%) !important;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+.filter-container-dark-mode{
+    background-color: hsl(226, 25%, 17%) !important;
+    color: hsl(200, 60%, 99%) !important;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.3s ease-in-out;
+}
+.title-dark-mode{
+    color: hsl(200, 60%, 99%) !important;
+    transition: all 0.3s ease-in-out;
+} 
 h1{
     font-size: 2rem;
     color: hsl(226, 25%, 17%);
@@ -38,6 +75,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .btn-container{
     width: 3rem;
@@ -132,7 +170,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 14%;
 }
 .section-filter{
     width: 25%;
@@ -142,7 +180,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.section-filter P{
+.filter-item{
     padding: 0.5rem 1rem;
     font-weight: 700;
     background-color: hsl(0, 0%, 100%);
@@ -196,7 +234,7 @@ header{
     .filter-container{
         width: 90%;
     }
-}
+
     .cardContainer{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,1fr);
