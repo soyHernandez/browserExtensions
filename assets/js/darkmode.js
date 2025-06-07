@@ -1,7 +1,6 @@
 const btnDarkMode = document.getElementById('toggleMode');
-
-btnDarkMode.addEventListener('click', () => {
-    btnDarkMode.classList.toggle('btn-dark-mode');
+function toggleDarkMode(){
+      btnDarkMode.classList.toggle('btn-dark-mode');
     const btnRemove = document.querySelectorAll('.btn-remove');
     btnRemove.forEach(btn => {
     btn.classList.toggle('btn-remove-dark-mode');
@@ -12,6 +11,8 @@ btnDarkMode.addEventListener('click', () => {
     })
     const title = document.querySelector('h1');
     title.classList.toggle('title-dark-mode');
+    const logo = document.getElementById('text');
+    logo.classList.toggle('logo-dark-mode');
   const body = document.body;
   const header = document.querySelector('header');
   const cards = document.querySelectorAll('.card'); 
@@ -31,4 +32,10 @@ btnDarkMode.addEventListener('click', () => {
   localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
 
   
-})
+}
+// Check localStorage for dark mode preference
+if (localStorage.getItem('darkMode') === 'enabled') { 
+  toggleDarkMode();
+}
+
+btnDarkMode.addEventListener('click', toggleDarkMode);

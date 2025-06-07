@@ -66,6 +66,10 @@ header{
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
+.logo-dark-mode{
+    fill: #fff !important;
+}
+
 .mode-toggle{
     width: 3rem;
     height: 3rem;
@@ -196,7 +200,7 @@ header{
     border: 1px solid hsl(3, 86%, 64%) !important;
     transition: all 0.3s ease-in-out;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .cardContainer{
         padding: 1rem;
         grid-template-columns: repeat(2,1fr);
